@@ -1,0 +1,177 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+
+
+.card {
+    max-width: 400px;
+    width: 100%;
+    height: 652px;
+    margin: 0 auto;
+    padding: 20px 35px;
+    border: 1px solid #E4E4E4;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+
+.filters__desc {
+    display: block;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #F9B300;
+    margin-bottom: 10px;
+}
+
+.weight__select {
+    width: 135px;
+    height: 35px;
+    background: #FFF7E1;
+    border: 1px solid #F9B300;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #000000;
+    margin-left: 30px;
+
+}
+
+.card__picture {
+    width: 170px;
+    height: 310px;
+}
+
+.product {
+    margin-left: 20px;
+}
+
+.product__stars {
+    width: 132px;
+    height: 25px;
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.product__stars img:not(last-child) {
+    margin-right: 2px;
+    margin-left: 0px;
+}
+
+.product__rating {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #5B5B5B;
+    margin-bottom: 30px;
+}
+
+.product__rating b {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #222222;
+}
+
+.product__roasting {
+    margin-bottom: 30px;
+}
+.desc__title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #222222;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    
+}
+
+.desc__intense span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #F9B300;
+}
+
+.title {
+    grid-column: 1/3;
+}
+.title h2 {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 31px;
+    color: #222222;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.title p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #222222;
+}
+
+.price {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 44px;
+    color: #222222;
+}
+
+.btn {
+    width: 160px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card__btn {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    background: #F9B300;
+    border-radius: 5px;
+    border: none;
+}
+
+.card__btn:hover, .card__btn:focus {
+    border: 1px solid #ad7d01;;
+}
+
+
+@media (max-width: 400px) {
+    .card{
+        padding: 10px 20px;
+    }
+
+    .filters__desc {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .weight__select {
+        width: 120px;
+    }
+}
