@@ -2,6 +2,11 @@ html {
     box-sizing: border-box;
 }
 
+:root {
+    --accent-color : #F9B300;
+    --accent-text-color: #222;
+}
+
 *,
 *::after,
 *::before {
@@ -30,7 +35,7 @@ html {
     font-weight: bold;
     font-size: 18px;
     line-height: 22px;
-    color: #F9B300;
+    color: var(--accent-color);
     margin-bottom: 10px;
 }
 
@@ -38,7 +43,7 @@ html {
     width: 135px;
     height: 35px;
     background: #FFF7E1;
-    border: 1px solid #F9B300;
+    border: 1px solid var(--accent-color);
     border-radius: 5px;
     font-style: normal;
     font-weight: 500;
@@ -84,7 +89,7 @@ html {
     font-weight: bold;
     font-size: 20px;
     line-height: 24px;
-    color: #222222;
+    color: var( --accent-text-color);
 }
 
 .product__roasting {
@@ -95,18 +100,26 @@ html {
     font-weight: 500;
     font-size: 18px;
     line-height: 21px;
-    color: #222222;
+    color: var( --accent-text-color);
     margin-top: 15px;
     margin-bottom: 10px;
     
 }
 
-.desc__intense span {
+.span {
     display: inline-block;
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background: #F9B300;
+    background: grey;
+}
+
+.span--active{
+    background: var(--accent-color);
+}
+
+.desc__intense span:not(:last-child) {
+    margin-right: 3px;
 }
 
 .title {
@@ -117,7 +130,7 @@ html {
     font-weight: 900;
     font-size: 25px;
     line-height: 31px;
-    color: #222222;
+    color: var( --accent-text-color);
     margin: 0;
     margin-bottom: 10px;
 }
@@ -127,7 +140,7 @@ html {
     font-weight: 500;
     font-size: 18px;
     line-height: 21px;
-    color: #222222;
+    color: var( --accent-text-color);
 }
 
 .price {
@@ -135,7 +148,7 @@ html {
     font-weight: 900;
     font-size: 35px;
     line-height: 44px;
-    color: #222222;
+    color: var( --accent-text-color);
 }
 
 .btn {
@@ -151,7 +164,7 @@ html {
     font-size: 18px;
     line-height: 22px;
     color: #FFFFFF;
-    background: #F9B300;
+    background: var(--accent-color);
     border-radius: 5px;
     border: none;
 }
